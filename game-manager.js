@@ -21,6 +21,7 @@ function makeMove(e) {
         targetField.dataset.taken = currentPlayer;
         if (checkForWinner()) {
             alertTheWinner();
+            blockGrid();
         } else if (checkForDraw()) {
             alert("DRAW!");
         } else {
@@ -32,6 +33,7 @@ function makeMove(e) {
                 makeAiMove();
                 if (checkForWinner()) {
                     alertTheWinner();
+                    blockGrid();
                 } else if (checkForDraw()) {
                     alert("DRAW!");
                 } else {
@@ -176,4 +178,13 @@ function alertTheWinner() {
         alert ("The winner is O");
     }
 
+}
+
+function blockGrid() {
+    let gameGrid = document.getElementById("game-grid");
+    let gameFields = gameGrid.children;
+
+    for (let i = 0; i < 9; ++i) {
+        gameFields[i].dataset.taken = "2";
+    }
 }
