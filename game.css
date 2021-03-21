@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    background-image: url("images/orion-nebula.jpg");
+    background-size: cover;
+}
+.sup-container {
+    width: 100%;
+}
+#game-title {
+    font-family: "Chango", cursive;
+    color: #ffffff;
+}
+.text-center {
+    text-align: center;
+}
+.game-grid-container {
+    width: 400px;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 2px 5px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#game-mode-btn-container {
+    width: 100%;
+}
+
+#player-p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+#player-p span {
+    font-weight: 600;
+}
+
+#game-mode-p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+#current-game-mode {
+    font-weight: 700;
+}
+
+#game-mode-btn {
+    padding: 10px 10px;
+    background: rgb(230,86,86);
+    background: linear-gradient(45deg, rgba(230,86,86,1) 40%, rgba(255,216,105,1) 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 22px;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#game-mode-btn:hover {
+    cursor: pointer;
+}
+
+#reset-game-btn {
+    padding: 10px 10px;
+    background: rgb(73,75,167);
+    background: linear-gradient(45deg, rgba(73,75,167,1) 31%, rgba(255,0,0,1) 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 22px;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#reset-game-btn:hover {
+    cursor: pointer;
+}
+
+.cross {
+    background-image: url("images/cross.png");
+    background-color: #ffffff;
+    background-size: cover;
+}
+.circle {
+    background-image: url("images/circle.png");
+    background-color: #ffffff;
+    background-size: cover;
+}
