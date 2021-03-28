@@ -1,0 +1,125 @@
+body {
+  font: 100% Montserrat, sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Advent Pro", sans-serif;
+}
+nav li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+nav a {
+  display: block;
+  padding: 0.2rem 2rem;
+  text-decoration: none;
+}
+nav a.navbar-link {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+nav a.navbar-link.active {
+  border-bottom: 2px solid white;
+}
+
+.navbar-dark {
+  background-color: #333;
+  color: #fff;
+}
+.navbar-dark a {
+  color: #fff;
+}
+.navbar-dark a:hover {
+  color: red;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  color: #333;
+}
+.navbar-transparent a {
+  color: #fff;
+}
+
+.display-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+
+.justify-content-space-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  background: white url("images/hero.jpg") center/cover no-repeat;
+}
+
+#hero::-webkit-scrollbar {
+  display: none;
+}
+
+#title {
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Advent Pro", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#subtitle {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#main-container {
+  min-width: 200px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.primary-btn-light {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  border: 2px solid #fff;
+  border-radius: 0;
+  font-size: 1.2rem;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335) 0.1s;
+}
+.primary-btn-light:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.418);
+}
+
+/*# sourceMappingURL=main.css.map */
