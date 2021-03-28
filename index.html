@@ -6,13 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Strona główna</title>
         <link href="favicon.ico" rel="SHORTCUT ICON" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@300;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <header>
-            <div class="navbar">
-                aaa
+        <section class="display-flex flex-column" id="hero">
+            <div id="hero-top">
+                <nav class="navbar navbar-transparent">
+                    <ul>
+                        <li><a href="#" class="navbar-link active">Home</a></li>
+                        <li><a href="#" class="navbar-link">Blog</a></li>
+                        <li><a href="#" class="navbar-link">About Me</a></li>
+                        <li><a href="#" class="navbar-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <h1 id="title" class="text-center">Visit Iceland today</h1>
+                <h2 id="subtitle" class="text-center">Adventure awaits</h2>
             </div>
-        </header>
+            
+            <button style="margin: 10% auto;" class="primary-btn-light">Learn more</button>
+            
+            
+        </section>
     </body>
 </html>
