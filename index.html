@@ -12,26 +12,32 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@300;700&display=swap"
             rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/9bfed1b833.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <section class="display-flex flex-column" id="hero">
             <div id="hero-top">
-                <nav class="navbar navbar-transparent">
-                    <ul>
-                        <li><a href="#" class="navbar-link active">Home</a></li>
-                        <li><a href="#" class="navbar-link">Blog</a></li>
-                        <li><a href="#" class="navbar-link">About Me</a></li>
-                        <li><a href="#" class="navbar-link">Contact</a></li>
-                    </ul>
+                <nav class="navbar navbar-transparent nav-height-duration" id="top-nav">
+                    <div class="nav-links-container">
+                        <a href="#" class="navbar-link active">Home</a>
+                        <a href="#" class="navbar-link">Blog</a>
+                        <a href="#" class="navbar-link">About Me</a>
+                        <a href="#" class="navbar-link">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
                 </nav>
+            </div>
+            <div class="titles-container text-center">
                 <h1 id="title" class="text-center">Visit Iceland today</h1>
                 <h2 id="subtitle" class="text-center">Adventure awaits</h2>
+                <button style="margin: 2rem auto" class="primary-btn-light">Learn more</button>
             </div>
-            
-            <button style="margin: 10% auto;" class="primary-btn-light">Learn more</button>
-            
-            
         </section>
+        <script src="js/navbar_toggler.js"></script>
     </body>
 </html>
