@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth; }
 
+p {
+  line-height: 1.5;
+  font-family: Montserrat, sans-serif; }
+
 .navbar-dark {
   background-color: #333;
   color: #fff; }
@@ -109,6 +113,11 @@ nav {
   color: #fff;
   font-size: 2rem; }
 
+#action-btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 2rem auto; }
+
 #main-container {
   min-width: 200px;
   max-width: 920px;
@@ -145,15 +154,93 @@ nav {
   .titles-container {
     top: 50%; } }
 @media screen and (max-width: 453px) {
+  nav {
+    padding: 14px 16px; }
+    nav a.navbar-link {
+      font-size: 14px; } }
+/*INTRO*/
+#intro-content-container {
+  padding-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  #intro-content-container img {
+    float: left;
+    width: 500px;
+    max-width: 500px;
+    margin-right: 15px; }
+
+#intro-text {
+  padding: 0 1rem; }
+  #intro-text #intro-title {
+    font-size: 4rem;
+    font-family: "Advent Pro", sans-serif;
+    text-align: left;
+    margin: 0; }
+  #intro-text p {
+    text-align: justify; }
+
+#intro-subtitle {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 4rem;
+  padding-top: 30px;
+  margin: 0; }
+
+#intro-grid-container {
+  padding-top: 30px;
+  display: grid;
+  row-gap: 0;
+  column-gap: 0;
+  grid-template-columns: auto auto auto; }
+  #intro-grid-container .grid-column {
+    text-align: center; }
+    #intro-grid-container .grid-column img {
+      width: 100%; }
+    #intro-grid-container .grid-column h5 {
+      font-size: 1em; }
+
+@media screen and (max-width: 991px) {
+  #intro-content-container {
+    text-align: center;
+    padding-top: 15px; }
+    #intro-content-container img {
+      float: none;
+      width: 80%;
+      display: inline-block;
+      margin: 0 auto;
+      max-width: 100%; }
+    #intro-content-container #intro-title {
+      text-align: center;
+      padding-top: 15px; } }
+@media screen and (max-width: 945px) {
+  #intro-grid-container {
+    display: block; }
+    #intro-grid-container .grid-column img, #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+      width: 80%; }
+    #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+      margin-left: auto;
+      margin-right: auto; }
+    #intro-grid-container .grid-column p {
+      margin-bottom: 32px; } }
+@media screen and (max-width: 643px) {
   #title {
     font-size: 2.4rem; }
 
   #subtitle {
     font-size: 1.2rem; }
 
-  nav {
-    padding: 14px 16px; }
-    nav a.navbar-link {
-      font-size: 14px; } }
+  #intro-grid-container {
+    display: block; }
+    #intro-grid-container .grid-column img, #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+      width: 100%; }
+
+  #intro-content-container {
+    margin-top: 17px; }
+    #intro-content-container img {
+      width: 100%; }
+    #intro-content-container #intro-title {
+      font-size: 2.4rem; }
+    #intro-content-container #intro-subtitle {
+      font-size: 2.4rem; } }
 
 /*# sourceMappingURL=main.css.map */

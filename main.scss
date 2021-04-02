@@ -75,6 +75,12 @@ nav {
     font-size: 2rem;
 }
 
+#action-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 2rem auto;
+}
+
 #main-container {
     min-width: 200px;
     max-width: 920px;
@@ -126,16 +132,128 @@ nav {
 }
 
 @media screen and (max-width: 453px) {
+    nav {
+        padding: 14px 16px;
+        a.navbar-link {
+            font-size: 14px;
+        }
+    }
+}
+
+$intro-padding-top: 30px;
+/*INTRO*/
+#intro-content-container {
+    padding-top: $intro-padding-top;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        float: left;
+        width: 500px;
+        max-width: 500px;
+        margin-right: 15px;
+    }
+}
+#intro-text {
+    padding: 0 1rem;
+    #intro-title {
+        font-size: $lg-title-font-size;
+        font-family: $headers-font;
+        text-align: left;
+        margin: 0;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+#intro-subtitle {
+    font-family: $headers-font;
+    font-size: $lg-title-font-size;
+    padding-top: $intro-padding-top;
+    margin: 0;
+}
+
+#intro-grid-container {
+    padding-top: $intro-padding-top;
+    display: grid;
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-columns: auto auto auto;
+    .grid-column {
+        text-align: center;
+        img {
+            width: 100%;
+        }
+        h5 {
+            font-size: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #intro-content-container {
+        text-align: center;
+        padding-top: 15px;
+        img {
+            float: none;
+            width: 80%;
+            display: inline-block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        #intro-title {
+            text-align: center;
+            padding-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+    #intro-grid-container {
+        display: block;
+        
+        .grid-column {
+            img, h5, p {
+                width: 80%;
+            }
+            h5, p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 643px) {
     #title {
         font-size: $xs-title-font-size;
     }
     #subtitle {
         font-size: $xs-subtitle-font-size;
     }
-    nav {
-        padding: 14px 16px;
-        a.navbar-link {
-            font-size: 14px;
+    #intro-grid-container {
+        display: block;
+        
+        .grid-column {
+            img, h5, p {
+                width: 100%;
+            }
+        }
+    }
+    #intro-content-container {
+        margin-top: 17px;
+        img {
+            width: 100%;
+        }
+        #intro-title {
+            font-size: $xs-title-font-size;
+        }
+        #intro-subtitle {
+            font-size: $xs-title-font-size;
         }
     }
 }
