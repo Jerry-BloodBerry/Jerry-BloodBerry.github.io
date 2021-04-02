@@ -43,9 +43,7 @@ nav {
 #hero {
     height: 100vh;
     width: 100%;
-    overflow-y: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    overflow-y: hidden;
     background: white url("images/hero.jpg") center/cover no-repeat;
 }
 
@@ -212,12 +210,15 @@ $intro-padding-top: 30px;
 @media screen and (max-width: 945px) {
     #intro-grid-container {
         display: block;
-        
+
         .grid-column {
-            img, h5, p {
+            img,
+            h5,
+            p {
                 width: 80%;
             }
-            h5, p {
+            h5,
+            p {
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -237,9 +238,11 @@ $intro-padding-top: 30px;
     }
     #intro-grid-container {
         display: block;
-        
+
         .grid-column {
-            img, h5, p {
+            img,
+            h5,
+            p {
                 width: 100%;
             }
         }

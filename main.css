@@ -84,11 +84,7 @@ nav {
 #hero {
   height: 100vh;
   width: 100%;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  overflow-y: hidden;
   background: white url("images/hero.jpg") center/cover no-repeat; }
 
 #hero::-webkit-scrollbar {
@@ -215,9 +211,12 @@ nav {
 @media screen and (max-width: 945px) {
   #intro-grid-container {
     display: block; }
-    #intro-grid-container .grid-column img, #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+    #intro-grid-container .grid-column img,
+    #intro-grid-container .grid-column h5,
+    #intro-grid-container .grid-column p {
       width: 80%; }
-    #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+    #intro-grid-container .grid-column h5,
+    #intro-grid-container .grid-column p {
       margin-left: auto;
       margin-right: auto; }
     #intro-grid-container .grid-column p {
@@ -231,7 +230,9 @@ nav {
 
   #intro-grid-container {
     display: block; }
-    #intro-grid-container .grid-column img, #intro-grid-container .grid-column h5, #intro-grid-container .grid-column p {
+    #intro-grid-container .grid-column img,
+    #intro-grid-container .grid-column h5,
+    #intro-grid-container .grid-column p {
       width: 100%; }
 
   #intro-content-container {
