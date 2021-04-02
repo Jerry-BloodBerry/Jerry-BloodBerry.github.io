@@ -4,9 +4,16 @@ $primary-light-color: #333;
 $primary-dark-color: #fff;
 $xs-title-font-size: 2.4rem;
 $xs-subtitle-font-size: 1.2rem;
+$lg-title-font-size: 4rem;
+$lg-subtitle-font-size: 2rem;
 
 html {
     scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.5;
+    font-family: $body-font;
 }
 
 .navbar-dark {
