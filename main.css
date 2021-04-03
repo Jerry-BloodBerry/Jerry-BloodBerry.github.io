@@ -51,6 +51,39 @@ p {
     color: #333;
     box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.418); }
 
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  border: 1px solid #333;
+  border-radius: 0.25rem; }
+  .card .card-img-top {
+    display: block;
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px); }
+  .card .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem; }
+    .card .card-body .card-title {
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+      text-align: left;
+      letter-spacing: 1px;
+      font-family: "Advent Pro", sans-serif;
+      margin-top: 0; }
+    .card .card-body .card-text {
+      font-family: Montserrat, sans-serif;
+      text-align: justify; }
+
 body {
   font: 100% Montserrat, sans-serif;
   color: #333;
@@ -160,7 +193,7 @@ nav {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  #intro-content-container img {
+  #intro-content-container #intro-img {
     float: left;
     width: 500px;
     max-width: 500px;
@@ -174,7 +207,8 @@ nav {
     text-align: left;
     margin: 0; }
   #intro-text p {
-    text-align: justify; }
+    text-align: justify;
+    font-size: 1rem; }
 
 #intro-subtitle {
   font-family: "Advent Pro", sans-serif;
@@ -182,24 +216,53 @@ nav {
   padding-top: 30px;
   margin: 0; }
 
-#intro-grid-container {
+#intro-cards-container {
   padding-top: 30px;
-  display: grid;
-  row-gap: 0;
-  column-gap: 0;
-  grid-template-columns: auto auto auto; }
-  #intro-grid-container .grid-column {
-    text-align: center; }
-    #intro-grid-container .grid-column img {
-      width: 100%; }
-    #intro-grid-container .grid-column h5 {
-      font-size: 1em; }
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: inline-flex;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  #intro-cards-container .card {
+    width: 22rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem; }
 
+@media screen and (max-width: 1200px) {
+  #title {
+    font-size: 3.2rem; }
+
+  #subtitle {
+    font-size: 1.6rem; }
+
+  #intro-content-container p {
+    font-size: 0.98rem; }
+  #intro-content-container #intro-title {
+    font-size: 3.2rem; }
+  #intro-content-container #intro-subtitle {
+    font-size: 3.2rem; } }
+@media screen and (max-width: 1148px) {
+  #title {
+    font-size: 2.4rem; }
+
+  #subtitle {
+    font-size: 1.2rem; }
+
+  #intro-content-container #intro-title {
+    font-size: 2.4rem; }
+  #intro-content-container #intro-subtitle {
+    font-size: 2.4rem; } }
 @media screen and (max-width: 991px) {
   #intro-content-container {
     text-align: center;
     padding-top: 15px; }
-    #intro-content-container img {
+    #intro-content-container #intro-img {
       float: none;
       width: 80%;
       display: inline-block;
@@ -208,19 +271,6 @@ nav {
     #intro-content-container #intro-title {
       text-align: center;
       padding-top: 15px; } }
-@media screen and (max-width: 945px) {
-  #intro-grid-container {
-    display: block; }
-    #intro-grid-container .grid-column img,
-    #intro-grid-container .grid-column h5,
-    #intro-grid-container .grid-column p {
-      width: 80%; }
-    #intro-grid-container .grid-column h5,
-    #intro-grid-container .grid-column p {
-      margin-left: auto;
-      margin-right: auto; }
-    #intro-grid-container .grid-column p {
-      margin-bottom: 32px; } }
 @media screen and (max-width: 643px) {
   #title {
     font-size: 2.4rem; }
@@ -228,16 +278,9 @@ nav {
   #subtitle {
     font-size: 1.2rem; }
 
-  #intro-grid-container {
-    display: block; }
-    #intro-grid-container .grid-column img,
-    #intro-grid-container .grid-column h5,
-    #intro-grid-container .grid-column p {
-      width: 100%; }
-
   #intro-content-container {
     margin-top: 17px; }
-    #intro-content-container img {
+    #intro-content-container #intro-img {
       width: 100%; }
     #intro-content-container #intro-title {
       font-size: 2.4rem; }
