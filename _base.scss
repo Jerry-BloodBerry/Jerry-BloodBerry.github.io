@@ -59,7 +59,7 @@ nav {
         padding: 10px 12px;
         border: 1px solid #fff;
         border-radius: 8px;
-        
+
         &:focus {
             outline: transparent;
         }
@@ -199,6 +199,21 @@ nav {
         border-color: transparent;
         outline: transparent;
     }
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(201, 201, 201);
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(201, 201, 201);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(201, 201, 201);
 }
 
 .resize-none {
