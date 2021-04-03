@@ -4,8 +4,13 @@ $primary-light-color: #333;
 $primary-dark-color: #fff;
 $xs-title-font-size: 2.4rem;
 $xs-subtitle-font-size: 1.2rem;
+$sx-body-font-size: .96rem;
+$md-title-font-size: 3.2rem;
+$md-subtitle-font-size: 1.6rem;
+$md-body-font-size: .98rem;
 $lg-title-font-size: 4rem;
 $lg-subtitle-font-size: 2rem;
+$lg-body-font-size: 1rem;
 
 html {
     scroll-behavior: smooth;
@@ -74,5 +79,47 @@ p {
         background-color: #fff;
         color: $primary-light-color;
         box-shadow: 2px 4px 2px 2px rgba(0, 0, 0, 0.418);
+    }
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    border: 1px solid $primary-light-color;
+    border-radius: 0.25rem;
+
+    .card-img-top {
+        display: block;
+        width: 100%;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+    }
+
+    .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+
+        .card-title {
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+            text-align: left;
+            letter-spacing: 1px;
+            font-family: $headers-font;
+            margin-top: 0;
+        }
+
+        .card-text {
+            font-family: $body-font;
+            text-align: justify;
+        }
     }
 }
