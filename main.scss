@@ -273,10 +273,18 @@ $intro-padding-top: 30px;
     form {
         width: 100%;
     }
+    /*Change text in autofill textbox Chrome*/
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: $primary-dark-color !important;
+    }
 }
 
 #contact-btn {
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
     background-color: transparent;
     color: #fff;
     font-family: $body-font;
@@ -300,7 +308,8 @@ $intro-padding-top: 30px;
         display: block;
         padding-bottom: 2rem;
     }
-    #contact-text, #contact-form {
+    #contact-text,
+    #contact-form {
         margin: 2rem auto;
         padding: 0 2rem;
         max-width: 430px;

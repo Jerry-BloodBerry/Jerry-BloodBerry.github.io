@@ -373,12 +373,19 @@ footer {
   flex: 1;
   max-width: 700px;
   min-width: 486px;
-  padding-right: 16px; }
+  padding-right: 16px;
+  /*Change text in autofill textbox Chrome*/ }
   #contact-form form {
     width: 100%; }
+  #contact-form input:-webkit-autofill,
+  #contact-form input:-webkit-autofill:hover,
+  #contact-form input:-webkit-autofill:focus,
+  #contact-form input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important; }
 
 #contact-btn {
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   color: #fff;
   font-family: Montserrat, sans-serif;
@@ -400,7 +407,8 @@ footer {
     display: block;
     padding-bottom: 2rem; }
 
-  #contact-text, #contact-form {
+  #contact-text,
+  #contact-form {
     margin: 2rem auto;
     padding: 0 2rem;
     max-width: 430px; }
