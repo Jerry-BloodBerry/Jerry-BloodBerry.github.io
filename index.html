@@ -13,8 +13,6 @@
             rel="stylesheet"
         />
         <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/9bfed1b833.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <section class="display-flex flex-column" id="hero">
@@ -88,6 +86,80 @@
                 </div>
             </div>
         </section>
+        <section id="contact">
+            <div id="contact-content-container">
+                <div id="contact-text">
+                    <h3 id="contact-title">Any Questions? Contact me!</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab culpa aperiam, beatae dolorum
+                        excepturi aliquam quos dolores est eaque obcaecati et? Consequuntur iste aut sit ad, temporibus
+                        minima voluptate pariatur quas reiciendis ea voluptatibus illo fugit, quidem nisi eligendi!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et, saepe ducimus praesentium
+                        tempora magnam.
+                    </p>
+                </div>
+                <div id="contact-form">
+                    <form>
+                        <div class="input-group">
+                            <label class="sr-only" for="contact_name">Name</label>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="contact_name"
+                                id="contact_name"
+                                spellcheck="false"
+                                placeholder="Name"
+                                required
+                            />
+                        </div>
+                        <div class="input-group">
+                            <label class="sr-only" for="contact_email">Email</label>
+                            <input
+                                class="form-control"
+                                type="email"
+                                name="contact_email"
+                                id="contact_email"
+                                spellcheck="false"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+                        <div class="input-group">
+                            <label class="sr-only" for="contact_subject">Subject</label>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="contact_subject"
+                                id="contact_subject"
+                                spellcheck="false"
+                                placeholder="Subject"
+                                required
+                            />
+                        </div>
+                        <div class="input-group">
+                            <label class="sr-only" for="contact_message">Message</label>
+                            <textarea
+                                class="form-control resize-none"
+                                name="contact_message"
+                                id="contact_message"
+                                cols="30"
+                                rows="10"
+                                spellcheck="false"
+                                placeholder="Message"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" name="submit_contact" id="contact-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            <footer class="text-center">
+                <small>Copyright &copy; 2021 Jakub Ćwikowski</small>
+            </footer>
+        </section>
+        <script src="https://kit.fontawesome.com/9bfed1b833.js" crossorigin="anonymous"></script>
         <script src="js/navbar_toggler.js"></script>
     </body>
 </html>
