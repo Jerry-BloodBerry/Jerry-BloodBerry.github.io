@@ -4,10 +4,10 @@ $primary-light-color: #333;
 $primary-dark-color: #fff;
 $xs-title-font-size: 2.4rem;
 $xs-subtitle-font-size: 1.2rem;
-$sx-body-font-size: .96rem;
+$sx-body-font-size: 0.96rem;
 $md-title-font-size: 3.2rem;
 $md-subtitle-font-size: 1.6rem;
-$md-body-font-size: .98rem;
+$md-body-font-size: 0.98rem;
 $lg-title-font-size: 4rem;
 $lg-subtitle-font-size: 2rem;
 $lg-body-font-size: 1rem;
@@ -19,6 +19,51 @@ html {
 p {
     line-height: 1.5;
     font-family: $body-font;
+}
+
+body {
+    font: 100% $body-font;
+    color: $primary-light-color;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 1.2rem 2rem;
+    a {
+        float: left;
+        display: block;
+        padding: 0.6rem 2rem;
+        text-decoration: none;
+        transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+        &.navbar-link {
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+
+            &.active {
+                border-bottom: 2px solid white;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
+    }
+
+    a.icon {
+        display: none;
+        padding: 10px 12px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        
+        &:focus {
+            outline: transparent;
+        }
+    }
 }
 
 .navbar-dark {
@@ -82,6 +127,17 @@ p {
     }
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 .card {
     position: relative;
     display: -webkit-box;
@@ -121,5 +177,37 @@ p {
             font-family: $body-font;
             text-align: justify;
         }
+    }
+}
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgba(60, 76, 109, 0.9);
+    color: $primary-dark-color;
+    border: none;
+    font-family: $body-font;
+    &:focus {
+        box-shadow: 0 0 5px #0091ff;
+        border-color: transparent;
+        outline: transparent;
+    }
+}
+
+.resize-none {
+    resize: none;
+}
+
+footer {
+    padding: 0.5rem 0;
+    small {
+        color: $primary-dark-color;
     }
 }
