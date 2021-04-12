@@ -105,7 +105,7 @@ nav {
   word-wrap: break-word;
   border: 1px solid #333;
   border-radius: 0.25rem; }
-  .card .card-img-top {
+  .card img.card-img-top {
     display: block;
     width: 100%;
     max-height: 235px;
